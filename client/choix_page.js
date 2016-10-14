@@ -1,9 +1,9 @@
 
-helper_map  = { currentPage             : function(page)
-                                            {// retourne la variable "page"
-                                                variable_de_session = 'page';
-                                                return Session.get(variable_de_session);
-                                            }
+helper_map  = { currentPage: function(page)
+                            {// retourne la variable "page"
+                                variable_de_session = 'page';
+                                return Session.get(variable_de_session);
+                            }
               }
 
 event_map   = { 'click .clickChangesPage': function(event, template)

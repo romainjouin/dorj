@@ -1,18 +1,19 @@
-helloOnCreated = function helloOnCreated() 
-{   
-    this.counter = new ReactiveVar(0);    
-}
+template_name = "hello"
 
-hello_helpers    = {    counter(){// retourne la valeur du counter
+OnCreated = function() 
+            {   
+                this.counter = new ReactiveVar(0);    
+            }
+
+helpers = {    counter(){// retourne la valeur du counter
                             return Template.instance().counter.get();
                         }
-                    }
-hello_events     =  {   'click button'(event, instance) {// increment the counter when button is clicked
+          }
+events  = { 'click button'(event, instance) {// increment the counter when button is clicked
                             instance.counter.set(instance.counter.get() + 1);
-                        },
-                    }
+                },
+          }
 
-
-Template.hello.onCreated(   helloOnCreated   );
-Template.hello.helpers  (   hello_helpers    );
-Template.hello.events   (   hello_events     );
+Template[template_name].onCreated(   OnCreated   );
+Template[template_name].helpers  (   helpers    );
+Template[template_name].events   (   events     );
