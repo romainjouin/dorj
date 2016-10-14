@@ -17,6 +17,6 @@ events  = { 'click button'(event, instance) {// increment the counter when butto
           }
 
 
-Template[template_name].onCreated  (   OnCreated    );
-Template[template_name].helpers  (   helpers    );
-Template[template_name].events   (   events     );
+Template[template_name].onCreated   (   OnCreated  );
+Template[template_name].helpers     (   helpers    );
+Template[template_name].events      (   events     );

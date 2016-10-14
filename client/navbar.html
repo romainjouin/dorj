@@ -1,17 +1,41 @@
 <template name="navbar">
-    <div class="navbar navbar-default" role="navigation">
+    <div class="navbar navbar-default" 
+         role="navigation">
     <div class="navbar-header">
-        <a class     = "navbar-brand clickChangesPage" 
+        <a class     = "navbar-brand click1" 
            href      = "#" 
-           data-page = "home">Mémorandum</a>
-    <ul class="nav navbar-nav">
-        <li role="presentation" ><a class="click1"  data-click1="home"           href="#"> Home         </a></li>
-        <li role="presentation" ><a class="click1"  data-click1="mission"        href="#"> Mission      </a></li>
-        <li role="presentation" ><a class="click1"  data-click1="services"       href="#"> Services     </a></li>
-        <li role="presentation" ><a class="click1"  data-click1="staff"          href="#"> Staff        </a></li>
-        <li role="presentation" ><a class="click1"  data-click1="testimonials"   href="#"> Testimonials </a></li>
-        {{> loginButtons}} 
-    </ul>    
+           data-page = "home">D O R J
+        </a>
+        <ul class="nav navbar-nav">
+            <li role="presentation" >
+                <a class="click1"  data-click1="home" href="#"> 
+                    Home         
+                </a>
+            </li>
+
+            <li role="presentation" >
+                <a class="click1"  data-click1="cb" href="#"> 
+                    <span class="glyphicon glyphicon-credit-card"></span>      
+                </a>
+            </li>
+            <li role="presentation" >
+                <a class="click1"  data-click1="services" href="#"> 
+                    <span class="glyphicon glyphicon-list-alt">
+                    </span>     
+                </a>
+            </li>
+            <li role="presentation" >
+                <a class="click1"  data-click1="staff" href="#"> 
+                    Staff        
+                </a>
+            </li>
+            <li role="presentation" >
+                <a class="click1"  data-click1="testimonials" href="#"> 
+                    Testimonials 
+                </a>
+            </li>
+            {{> loginButtons}} 
+        </ul>    
     </div>
 </div>
     {{> Template.dynamic template=click1}}
