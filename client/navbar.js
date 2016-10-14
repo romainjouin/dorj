@@ -1,17 +1,17 @@
 template_name   = "navbar"
-
 OnCreated       = function() 
-                    {        class_click1_data_default   = 'home';
+                    {        class_click1_data_default   = '';
                         this.class_click1_data           = "data-click1"; // utilise dans les events
                         this.click1                      = new ReactiveVar(class_click1_data_default);
                     }
 
-helpers         = { // variables dynamiques de template (helper)
+// variables dynamiques de template (helper)
+helpers         = { 
                     click1(){   local_this = Template.instance();
                                 return local_this.click1.get() ;}
                   }
-
-events          = { //evenemnts
+//evenemnts
+events          = { 
                     'click .click1': function(event, template)
                                 {// met à jour la variable page selon l'attribut "data-page" de l'objet cliqué
                                     local_this    = Template.instance();
