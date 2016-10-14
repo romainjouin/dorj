@@ -2,10 +2,6 @@ import { Meteor } from 'meteor/meteor';
 
 Meteor.startup(() => {
     // code to run on server at startup
-    smtp = {    username : "romain.jouin"           ,
-                password : "connards2016"           ,
-                server   : "smtp.googlemail.com"    ,
-                port     : 465                      };
     
     smtp_url = "smtp://" + encodeURIComponent(smtp.username)   + ":" +
                             encodeURIComponent(smtp.password)   + "@" +
